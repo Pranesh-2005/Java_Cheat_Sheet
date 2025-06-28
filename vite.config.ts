@@ -105,8 +105,8 @@ export default defineConfig(({ mode }) => {
         registerType: 'autoUpdate',
         includeAssets: ['favicon.svg', 'safari-pinned-tab.svg'],
         manifest: {
-          name: 'JavaScript Cheatsheet',
-          short_name: 'JavaScript Cheatsheet',
+          name: 'Java Cheatsheet',
+          short_name: 'Java Cheatsheet',
           theme_color: '#ffffff',
           icons: [
             {
