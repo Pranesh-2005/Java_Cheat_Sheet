@@ -102,13 +102,24 @@ export default defineConfig(({ mode }) => {
       }),
 
       // https://github.com/antfu/vite-plugin-pwa
-      VitePWA({
+VitePWA({
         registerType: 'autoUpdate',
-        includeAssets: ['favicon.svg', 'safari-pinned-tab.svg'],
+        includeAssets: [
+          'favicon.svg',
+          'safari-pinned-tab.svg',
+          'android-chrome-192x192.png',
+          'android-chrome-512x512.png',
+          'apple-touch-icon.png',
+        ],
         manifest: {
           name: 'Java Cheatsheet',
           short_name: 'Java Cheatsheet',
           theme_color: '#ffffff',
+          background_color: '#ffffff',
+          display: 'standalone', // Ensures mobile PWA experience
+          orientation: 'portrait',
+          start_url: '/',
+          scope: '/',
           icons: [
             {
               src: '/android-chrome-192x192.png',
@@ -121,14 +132,34 @@ export default defineConfig(({ mode }) => {
               type: 'image/png',
             },
             {
-              src: '/android-chrome-512x512.png',
-              sizes: '512x512',
+              src: '/apple-touch-icon.png',
+              sizes: '180x180',
               type: 'image/png',
               purpose: 'any maskable',
             },
           ],
         },
-      }),
+        workbox: {
+          runtimeCaching: [
+            {
+              urlPattern: /^https:\/\/fonts\.(?:googleapis|gstatic)\.com\/.*/i,
+              handler: 'CacheFirst',
+              options: {
+                cacheName: 'google-fonts',
+                expiration: { maxEntries: 10, maxAgeSeconds: 60 * 60 * 24 * 365 },
+              },
+            },
+            {
+              urlPattern: /^https:\/\/cdn\.jsdelivr\.net\/.*/i,
+              handler: 'CacheFirst',
+              options: {
+                cacheName: 'jsdelivr-cdn',
+                expiration: { maxEntries: 10, maxAgeSeconds: 60 * 60 * 24 * 365 },
+              },
+            },
+          ],
+        },
+      }),    
     ],
 
     // https://github.com/antfu/vite-ssg
