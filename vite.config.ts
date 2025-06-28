@@ -47,6 +47,7 @@ export default defineConfig(({ mode }) => {
           { dir: 'src/pages', baseRoute: '' },
           { dir: 'docs/cheatsheet', baseRoute: 'cheatsheet' },
           { dir: 'docs/oops', baseRoute: 'oops' },
+          { dir: 'docs/wrapperclass', baseRoute: 'wrapperclass' },
           { dir: 'docs/collection', baseRoute: 'collection' },
           { dir: 'docs/multithread', baseRoute: 'multithread' },
           { dir: 'docs/builtin', baseRoute: 'builtin' },

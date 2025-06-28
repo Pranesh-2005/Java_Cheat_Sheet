@@ -14,18 +14,24 @@ const route = useRoute()
         <!-- menu -->
         <div class="ml-14 flex flex-1 items-center space-x-6 lg:ml-0">
           <div class="mr-3 flex flex-shrink-0 items-center">
-            <router-link to="/">
-              <img
-                class="h-6 w-auto rounded"
-                src="/icons/java.png"
-                alt="javascript-cheatsheet"
-                height="10"
-                width="10"
-              />
-            </router-link>
-          </div>
+  <router-link to="/" class="flex items-center">
+    <img
+      class="h-6 w-auto rounded"
+      src="/icons/java.png"
+      alt="javascript-cheatsheet"
+      height="10"
+      width="10"
+    />
+<span
+  class="ml-2 text-lg font-bold text-zinc-800 dark:text-zinc-100 whitespace-nowrap"
+  style="font-family: 'Lexend', 'Inter', sans-serif;"
+>
+  Java Cheat Sheet
+</span>
+  </router-link>
+</div>
 
-          <algolia-doc-search />
+          <!-- <algolia-doc-search /> -->
         </div>
 
         <!-- actions -->
@@ -77,14 +83,14 @@ const route = useRoute()
           </div>
 
           <base-theme-toggle />
-          <!-- <a
+          <a
             target="_blank"
-            href="https://github.com/wilfredinni/javascript-cheatsheet"
+            href="https://github.com/Pranesh-2005/Java_Cheat_Sheet"
             rel="noreferrer"
           >
             <github-icon />
-            <span class="sr-only">Javascript Cheatsheet repository</span>
-          </a> -->
+            <span class="sr-only">Java Cheatsheet repository</span>
+          </a>
         </div>
       </div>
     </div>

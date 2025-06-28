@@ -82,7 +82,7 @@ export const useNavigationStore = defineStore('navigation', {
         updated: false,
       },
       {
-        name: 'Error Handling',
+        name: 'Exception Handling',
         path: '/cheatsheet/error-handling',
         updated: false,
       },
@@ -94,7 +94,7 @@ export const useNavigationStore = defineStore('navigation', {
     ] as NavigationItem[],
     oopsNavigation: [
       {
-        name: 'Basics',
+        name: 'OOPS Basics',
         path: '/oops/oopsbasics',
         updated: false,
       },
@@ -129,9 +129,49 @@ export const useNavigationStore = defineStore('navigation', {
         updated: false,
       },
     ] as NavigationItem[],
+
+    wrapperclassNavigation: [
+      {
+       name: 'Wrapper Class Basics',
+       path: '/wrapperclass/basics', 
+       updated: false,
+      },
+      {
+        name : 'Integer',
+        path: '/wrapperclass/integer',
+        updated: false,
+      },
+            {
+        name : 'Float',
+        path: '/wrapperclass/float',
+        updated: false,
+      },
+      {
+        name : 'Boolean',
+        path: '/wrapperclass/boolean',
+        updated: false,
+      },
+      {
+        name : 'Character',
+        path: '/wrapperclass/character',
+        updated: false,
+      },
+      {
+        name : 'Array',
+        path: '/wrapperclass/array',
+        updated: false,
+      },
+
+      {
+        name : 'String',
+        path: '/wrapperclass/string',
+        updated: false,
+      },      
+    ] as NavigationItem[],
+
     collectionNavigation: [
       {
-        name: 'Basics',
+        name: 'Collection Basics',
         path: '/collection/basics',
         updated: false,
       },
@@ -179,7 +219,7 @@ export const useNavigationStore = defineStore('navigation', {
 
     multiThreadNavigation: [
       {
-        name: 'Basics',
+        name: 'Multi Threading Basics',
         path: '/multithread/basics',
       },
     ] as NavigationItem[],

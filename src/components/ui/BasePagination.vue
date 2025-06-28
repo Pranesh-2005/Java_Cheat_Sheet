@@ -8,6 +8,7 @@ const allRoutes = [
   ...navigation.mainNavigation,
   ...navigation.cheatsheetNavigation,
   ...navigation.oopsNavigation,
+  ...navigation.wrapperclassNavigation,
   ...navigation.collectionNavigation,
   ...navigation.multiThreadNavigation,
 ]

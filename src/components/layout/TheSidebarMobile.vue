@@ -80,6 +80,10 @@ watch(useRoute(), () => (isOpen.value = false))
       :navigation="navigation.oopsNavigation"
       section-name="OOP - Object Oriented Programming"
     />
+     <the-sidebar-navigation
+      :navigation="navigation.wrapperclassNavigation"
+      section-name="Wrapper Classes In Java"
+    />    
     <the-sidebar-navigation
       :navigation="navigation.collectionNavigation"
       section-name="Collection Framework in Java"
