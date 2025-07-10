@@ -44,21 +44,8 @@ A handy and concise cheat sheet for Java developers! Whether you're a beginner o
 
 - Browse the cheat sheet directly in the repository.
 - Use the provided code snippets and explanations to accelerate your Java development.
-- To contribute or update the cheat sheet, see the [Contributing](#-contributing) section below.
 
 ### Scripts
-
-- **Fetch Contributors:**  
-  Update the list of project contributors.
-  ```sh
-  node scripts/fetch-contributors.ts
-  ```
-
-- **Fetch Avatars:**  
-  Download user avatars for contributors.
-  ```sh
-  node scripts/fetch-avatars.ts
-  ```
 
 - **Lint and Format:**  
   Ensure code consistency.
