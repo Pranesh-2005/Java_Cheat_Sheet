@@ -1,2 +1,5 @@
 User-agent: *
 Allow: /
+
+# Sitemap location
+Sitemap: https://javacheatsheet.vercel.app/sitemap.xml
