@@ -62,6 +62,7 @@ export function useMeta() {
       { name: 'twitter:description', content: 'The Java Cheatsheet' },
       // { name: 'twitter:image', content: cardImage },
       { name: 'twitter:card', content: 'summary' },
+      { name: 'google-site-verification', content: '9c9WJrB6k1_0JHlUx3V8JNS7B5t4OGt8asr9IeJZhkM' },
     ],
     link: [{ rel: 'canonical', href: url }],
   }
