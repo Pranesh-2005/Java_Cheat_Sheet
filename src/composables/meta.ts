@@ -47,7 +47,7 @@ export function useMeta() {
       { name: 'keywords', content: keywords.join(', ') },
       { property: 'og:title', content: 'Java Cheatsheet' },
       { property: 'og:description', content: description },
-      { property: 'og:url', content: url },
+      { property: 'og:url', content: 'https://javacheatsheet.vercel.app' },
       { property: 'og:type', content: 'article' },
       // { property: 'og:image', content: cardImage },
       { name: 'twitter:title', content: 'Java Cheatsheet' },
